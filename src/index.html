@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Модульбанк</title>
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      <div class="nav__logo">
+        <a class="nav__logo-link" href="#">
+          <img class="nav__logo-img" src="<%=require('./images/logo.svg')%>" alt="Модульбанк">
+          <span class="nav__logo-text">Модульбанк</span>
+        </a>
+      </div>
+      <nav class="nav__menu">
+        <ul class="nav__menu-list">
+          <li class="nav__menu-item">
+            <span class="nav__menu-text">Банк</span>
+            <img class="nav__menu-icon" src="<%=require('./images/arrow.svg')%>" alt="">
+          </li>
+          <li class="nav__menu-item">
+            <span class="nav__menu-text">Сервисы</span>
+            <img class="nav__menu-icon" src="<%=require('./images/arrow.svg')%>" alt="">
+          </li>
+          <li class="nav__menu-item">
+            <span class="nav__menu-text">Селлерам</span>
+            <img class="nav__menu-icon" src="<%=require('./images/arrow.svg')%>" alt="">
+          </li>
+          <li class="nav__menu-item">
+            <span class="nav__menu-text">Касса</span>
+            <img class="nav__menu-icon" src="<%=require('./images/arrow.svg')%>" alt="">
+          </li>
+          <li class="nav__menu-item">
+            <span class="nav__menu-text">ВЭД</span>
+            <img class="nav__menu-icon" src="<%=require('./images/arrow.svg')%>" alt="">
+          </li>
+          <li class="nav__menu-item">
+            <span class="nav__menu-text">Кофе</span>
+          </li>
+          <li class="nav__menu-item">
+            <span class="nav__menu-text">Партнёрам</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav__utility">
+        <a href="#">
+          <img src="<%=require('./images/call-icon.svg')%>" alt="Звонок в банк">
+        </a>
+        <button class="nav__login-button" type="button">Войти
+          <img src="<%=require('./images/user-icon.svg')%>" alt="">
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <div class="main-promo">
+        <div class="main-promo__content">
+          <div class="main-promo__textblock">
+            <h1 class="main-promo__title">Больше, чем просто тарифы для селлеров</h1>
+            <p class="main-promo__text text">Для работы на любых площадках и с любыми оборотами!</p>
+          </div>
+          <button class="main-promo__button button" type="button">90 дней бесплатно</button>
+          <span class="main-promo__price text">Далее от 490 ₽ в месяц</span>
+        </div>
+        <img srcset="<%=require('./images/main-promo.png')%> 1x,
+         <%=require('./images/main-promo-2x.png')%> 2x,
+         <%=require('./images/main-promo-3x.png')%> 3x"
+         alt="Продвижение вашего товара на любых площадках">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
