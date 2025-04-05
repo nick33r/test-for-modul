@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible {
+  outline: none;
+}
+
 button,
 input {
   color: currentColor;

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Модульбанк</title>
+  <link rel="icon" href="./images/favicon.ico" sizes="any">
 </head>
 <body>
   <header class="header">
@@ -17,30 +18,30 @@
       <nav class="nav__menu">
         <ul class="nav__menu-list">
           <li class="nav__menu-item">
-            <span class="nav__menu-text">Банк</span>
+            <span class="nav__menu-text text">Банк</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text">Сервисы</span>
+            <span class="nav__menu-text text">Сервисы</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text">Селлерам</span>
+            <span class="nav__menu-text text">Селлерам</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text">Касса</span>
+            <span class="nav__menu-text text">Касса</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text">ВЭД</span>
+            <span class="nav__menu-text text">ВЭД</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text">Кофе</span>
+            <span class="nav__menu-text text">Кофе</span>
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text">Партнёрам</span>
+            <span class="nav__menu-text text">Партнёрам</span>
           </li>
         </ul>
       </nav>
@@ -48,7 +49,7 @@
         <a href="#">
           <img src="<%=require('./images/call-icon.svg')%>" alt="Звонок в банк">
         </a>
-        <button class="nav__login-button" type="button">Войти
+        <button class="nav__login-button text" type="button">Войти
           <img src="<%=require('./images/user-icon.svg')%>" alt="">
         </button>
       </div>
@@ -59,8 +60,8 @@
       <div class="main-promo">
         <div class="main-promo__content">
           <div class="main-promo__textblock">
-            <h1 class="main-promo__title">Больше, чем просто тарифы для селлеров</h1>
-            <p class="main-promo__text text">Для работы на любых площадках и с любыми оборотами!</p>
+            <h1 class="main-promo__title title">Больше, чем просто тарифы для селлеров</h1>
+            <p class="main-promo__text text"><span class="responsive-line-break">Для работы на любых площадках </span>и с любыми оборотами!</p>
           </div>
           <button class="main-promo__button button button--accent" type="button">
             <span class="button__text">
@@ -85,114 +86,121 @@
       <ul class="benefits__list">
         <li class="benefits__item">
           <h3 class="benefits__title">Комиссия 0%</h3>
-          <p class="benefits__text text"><span>на вывод выручки</span> со всех маркетплейсов</p>
+          <p class="benefits__text text"><span class="responsive-line-break">на вывод выручки </span>со всех маркетплейсов</p>
         </li>
         <li class="benefits__item">
           <h3 class="benefits__title">26 000+</h3>
-          <p class="benefits__text text"><span>селлеров доверили нам</span> ведение своего бизнеса</p>
+          <p class="benefits__text text"><span class="responsive-line-break">селлеров доверили нам </span>ведение своего бизнеса</p>
         </li>
         <li class="benefits__item">
           <h3 class="benefits__title">10+ маркетплейсов</h3>
-          <p class="benefits__text text"><span>для работы с ключевыми</span> площадками рынка</p>
+          <p class="benefits__text text"><span class="responsive-line-break">для работы с ключевыми </span>площадками рынка</p>
         </li>
       </ul>
     </article>
 
     <section class="tariffs">
-      <h2 class="tariffs__title">Тарифы для каждого</h2>
+      <h2 class="tariffs__title title">Тарифы для каждого</h2>
 
       <ul class="tariffs__list">
-        <li class="tariffs__item tariff-card">
-          <h3 class="tariff-card__title">Селлер</h3>
-          <p class="tariff-card__price">0 ₽ в месяц</p>
-          <ul class="tariff-card__list conditions-list">
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Без комиссии</h4>
-              <p class="conditions-list__text">Переводы выручки до 1 000 000 ₽, далее 0,5%</p>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Бесплатно</h4>
-              <p class="conditions-list__text">Переводы через СБП себе с Маркет Карты</p>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Снятие в банкоматах — 2%</h4>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Единый кабинет для работы с маркетплейсами</h4>
-            </li>
-          </ul>
-          <div class="tariff-card__button-block">
-            <button class="tariffs__banner-button button button--accent" type="button">
-              <span class="button__text">
-                90 дней бесплатно
-              </span>
-            </button>
-            <span class="tariff-card__regular-price">Далее 490 ₽ в месяц</span>
+        <li class="tariffs__item tariff-card tariff-card--accent">
+          <div class="tariff-card__content">
+            <h3 class="tariff-card__title">Селлер</h3>
+            <p class="tariff-card__price">0 ₽ в месяц</p>
+            <ul class="tariff-card__list conditions-list">
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Без комиссии</h4>
+                <p class="conditions-list__text text"><span class="responsive-line-break">Переводы выручки </span>до 1 000 000 ₽, далее 0,5%</p>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Бесплатно</h4>
+                <p class="conditions-list__text text"><span class="responsive-line-break">Переводы через <span class="sbp-icon"> СБП</span> себе </span>с Маркет Карты</p>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Снятие в банкоматах — 2%</h4>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text"><span class="responsive-line-break">Единый кабинет для работы </span>с маркетплейсами</h4>
+              </li>
+            </ul>
+            <div class="tariff-card__button-block">
+              <button class="tariff-card__button button button--accent" type="button">
+                <span class="button__text">
+                  90 дней бесплатно
+                </span>
+              </button>
+              <span class="tariff-card__regular-price text">Далее 490 ₽ в месяц</span>
+            </div>
           </div>
         </li>
 
         <li class="tariffs__item tariff-card">
-          <h3 class="tariff-card__title">Селлер PRO</h3>
-          <p class="tariff-card__price">2 490 ₽ в месяц</p>
-          <ul class="tariff-card__list conditions-list">
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Без комиссии</h4>
-              <p class="conditions-list__text">Переводы выручки до 5 000 000 ₽, далее 0,5%</p>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Бесплатно</h4>
-              <p class="conditions-list__text">Переводы через СБП себе с Маркет Карты</p>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Снятие в банкоматах — 1%</h4>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Единый кабинет для работы с маркетплейсами</h4>
-            </li>
-          </ul>
-          <div class="tariff-card__button-block">
-            <button class="tariffs__banner-button button button--accent" type="button">
-              <span class="button__text">
-                Подключить
-              </span>
-            </button>
+          <div class="tariff-card__content">
+            <h3 class="tariff-card__title">Селлер PRO</h3>
+            <p class="tariff-card__price">2 490 ₽ в месяц</p>
+            <ul class="tariff-card__list conditions-list">
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Без комиссии</h4>
+                <p class="conditions-list__text text"><span class="responsive-line-break">Переводы выручки </span>до 5 000 000 ₽, далее 0,5%</p>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Бесплатно</h4>
+                <p class="conditions-list__text text"><span class="responsive-line-break">Переводы через <span class="sbp-icon"> СБП</span> себе </span>с Маркет Карты</p>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Снятие в банкоматах — 1%</h4>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text"><span class="responsive-line-break">Единый кабинет для работы </span>с маркетплейсами</h4>
+              </li>
+            </ul>
+            <div class="tariff-card__button-block">
+              <button class="tariff-card__button button" type="button">
+                <span class="button__text">
+                  Подключить
+                </span>
+              </button>
+            </div>
           </div>
         </li>
 
         <li class="tariffs__item tariff-card">
-          <h3 class="tariff-card__title">Селлер TOP</h3>
-          <p class="tariff-card__price">9 900 ₽ в месяц</p>
-          <ul class="tariff-card__list conditions-list">
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Без комиссии</h4>
-              <p class="conditions-list__text">Переводы выручки без ограничений</p>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Бесплатно</h4>
-              <p class="conditions-list__text">Переводы через СБП себе с Маркет Карты</p>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Снятие в банкоматах — до 1%</h4>
-            </li>
-            <li class="conditions-list__item">
-              <h4 class="conditions-list__title">Единый кабинет для работы с маркетплейсами</h4>
-            </li>
-          </ul>
-          <div class="tariff-card__button-block">
-            <button class="tariffs__banner-button button button--accent" type="button">
-              <span class="button__text">
-                Подключить
-              </span>
-            </button>
+          <div class="tariff-card__content">
+            <h3 class="tariff-card__title">Селлер TOP</h3>
+            <p class="tariff-card__price">9 900 ₽ в месяц</p>
+            <ul class="tariff-card__list conditions-list">
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Без комиссии</h4>
+                <p class="conditions-list__text text"><span class="responsive-line-break">Переводы выручки </span>без ограничений</p>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Бесплатно</h4>
+                <p class="conditions-list__text text"><span class="responsive-line-break">Переводы через <span class="sbp-icon"> СБП</span> себе </span>с Маркет Карты</p>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text">Снятие в банкоматах — до 1%</h4>
+              </li>
+              <li class="conditions-list__item">
+                <h4 class="conditions-list__title text"><span class="responsive-line-break">Единый кабинет для работы </span>с маркетплейсами</h4>
+              </li>
+            </ul>
+            <div class="tariff-card__button-block">
+              <button class="tariff-card__button button" type="button">
+                <span class="button__text">
+                  Подключить
+                </span>
+              </button>
+            </div>
           </div>
         </li>
       </ul> 
 
       <div class="tariffs__banner">
-        
         <div class="tariffs__banner-content">
-          <h3 class="tariffs__banner-title">Получите бесплатно</h3>
-          <p class="tariffs__banner-text text">Подберем для вас индивидуальные условия</p>
+          <div class="tariffs__banner-text-block">
+            <h3 class="tariffs__banner-title title">Ваш оборот на маркетплейсах более 10 000 000 ₽?</h3>
+            <p class="tariffs__banner-text text text">Подберем для вас индивидуальные условия</p>
+          </div>
           <form class="tariffs__banner-form" action="submit">
             <input class="tariffs__banner-input" type="tel" placeholder="Номер телефона">
             <button class="tariffs__banner-button button" type="submit">
