@@ -3,20 +3,46 @@
 @import url('../vendor/variables.css');
 
 .button {
+  position: relative;
   border: none;
   border-radius: 8px;
   padding: 20px 30px;
+  overflow: hidden;
+  color: var(--accent-color);
+  background: #6F2DC21A;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:not(.button--accent):hover {
+  background: #702dc235;
+}
+
+.button--accent {
   color: #fff;
+  background: linear-gradient(to right, #A965ED, #FA71CD);
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  cursor: pointer;
-  background: linear-gradient(to right, #A965ED, #FA71CD);
 }
 
-.button:hover {
-  background: #A965ED;
+.button--accent::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-color: #A965ED;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button--accent:hover::before {
+  opacity: 1;
 }
 
 .text {
@@ -74,7 +100,7 @@
   color: #FFFFFF99;
 }
 
-.nav__menu-item:hover .nav__menu-icon {
+.nav__menu-item:hover .arrow {
   transform: rotate(180deg);
 }
 
@@ -106,9 +132,13 @@
 /* --------------- main --------------- */
 
 .main {
+  padding-bottom: 150px;
   /* padding: 5px 120px 89px; */
   font-family: 'Inter', sans-serif;
 }
+
+
+/* --------------- intro --------------- */
 
 .intro {
   padding: 5px 120px 0;
@@ -153,6 +183,57 @@
 }
 
 .main-promo__price {
-  font-size: 16px;
   opacity: 0.5;
+  font-size: 16px;
+}
+
+.main-promo__imgblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------- benefits --------------- */
+
+.benefits {
+  padding: 50px 120px 0;
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 1px solid #0000001A;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.benefits__title {
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+}
+
+.benefits__text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------- tariffs --------------- */
+
+.tariffs {
+  padding: 200px 120px 89px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.tariffs__title {
+
 }
