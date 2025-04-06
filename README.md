@@ -1,5 +1,3 @@
-# test-for-modul
-
 # Test Task: Modular Layout
 
 [![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://nick33r.github.io/test-for-modul/)
@@ -18,8 +16,22 @@ This repository contains a completed test task for frontend layout development. 
 git clone https://github.com/nick33r/test-for-modul.git
 ```
 
-2. Open in browser:
+2. Install dependencies and run dev server:
 
 ```bash
-cd test-for-modul && open index.html
+cd test-for-modul
+npm install
+npm run dev
 ```
+
+3. For production build:
+
+```bash
+npm run build
+```
+
+## 📬 Contact
+
+✉️ Telegram: @Andrys33
+
+🔗 **[GitHub](https://github.com/nick33r)**
