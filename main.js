@@ -1,0 +1,2 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){var e,n=document.querySelector(".slider-parners__list"),t=document.querySelectorAll(".slider-parners__item");0!==t.length&&function(e){for(var r=document.createDocumentFragment(),o=0;o<e;o++)t.forEach((function(e){r.appendChild(e.cloneNode(!0))}));n.appendChild(r)}((e=t.length)<=3?5:e<=6?3:e>=12?0:1)}))})();
+//# sourceMappingURL=main.js.map
