@@ -1,0 +1,9 @@
+@import url('./main/intro.css');
+@import url('./main/benefits.css');
+@import url('./main/tariffs.css');
+@import url('./main/tariff-card.css');
+@import url('./main/tariffs__banner.css');
+
+.main {
+  font-family: var(--main-font-family, sans-serif);
+}

@@ -1,0 +1,46 @@
+.tariffs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 120px 15px 29px;
+}
+
+.tariffs__title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.tariffs__list {
+  display: grid;
+  gap: 30px;
+}
+
+@media screen and (width >= 768px) {
+  .tariffs {
+    padding: 120px 30px 79px;
+  }
+
+  .tariffs__title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .tariffs {
+    padding: 180px 30px 89px;
+  }
+
+  .tariffs__title {
+    font-size: 50px;
+  }
+
+  .tariffs__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  .tariffs {
+    padding: 200px 120px 89px;
+  }
+}

@@ -18,39 +18,45 @@
       <nav class="nav__menu">
         <ul class="nav__menu-list">
           <li class="nav__menu-item">
-            <span class="nav__menu-text text">Банк</span>
+            <span class="nav__menu-text">Банк</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text text">Сервисы</span>
+            <span class="nav__menu-text">Сервисы</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text text">Селлерам</span>
+            <span class="nav__menu-text">Селлерам</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text text">Касса</span>
+            <span class="nav__menu-text">Касса</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text text">ВЭД</span>
+            <span class="nav__menu-text">ВЭД</span>
             <img class="nav__menu-icon arrow" src="<%=require('./images/arrow.svg')%>" alt="">
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text text">Кофе</span>
+            <span class="nav__menu-text">Кофе</span>
           </li>
           <li class="nav__menu-item">
-            <span class="nav__menu-text text">Партнёрам</span>
+            <span class="nav__menu-text">Партнёрам</span>
           </li>
         </ul>
       </nav>
       <div class="nav__utility">
-        <a href="#">
+        <a class="nav__utility-icon nav__utility-icon--always-visible" href="#">
           <img src="<%=require('./images/call-icon.svg')%>" alt="Звонок в банк">
         </a>
-        <button class="nav__login-button text" type="button">Войти
-          <img src="<%=require('./images/user-icon.svg')%>" alt="">
+        <a class="nav__utility-icon" href="#">
+          <img src="<%=require('./images/user-icon.svg')%>" alt="Войти в личный кабинет">
+        </a>
+        <a class="nav__utility-icon" href="#">
+          <img src="<%=require('./images/menu-icon.svg')%>" alt="Раскрыть меню">
+        </a>
+        <button class="nav__login-button" type="button">Войти
+          <img class="nav__login-button-icon" src="<%=require('./images/user-icon.svg')%>" alt="">
         </button>
       </div>
     </div>
@@ -106,7 +112,7 @@
         <li class="tariffs__item tariff-card tariff-card--accent">
           <div class="tariff-card__content">
             <h3 class="tariff-card__title">Селлер</h3>
-            <p class="tariff-card__price">0 ₽ в месяц</p>
+            <p class="tariff-card__price"><span class="responsive-line-break">0 ₽&nbsp;</span>в месяц</p>
             <ul class="tariff-card__list conditions-list">
               <li class="conditions-list__item">
                 <h4 class="conditions-list__title text">Без комиссии</h4>
@@ -137,7 +143,7 @@
         <li class="tariffs__item tariff-card">
           <div class="tariff-card__content">
             <h3 class="tariff-card__title">Селлер PRO</h3>
-            <p class="tariff-card__price">2 490 ₽ в месяц</p>
+            <p class="tariff-card__price"><span class="responsive-line-break">2 490 ₽&nbsp;</span>в месяц</p>
             <ul class="tariff-card__list conditions-list">
               <li class="conditions-list__item">
                 <h4 class="conditions-list__title text">Без комиссии</h4>
@@ -167,7 +173,7 @@
         <li class="tariffs__item tariff-card">
           <div class="tariff-card__content">
             <h3 class="tariff-card__title">Селлер TOP</h3>
-            <p class="tariff-card__price">9 900 ₽ в месяц</p>
+            <p class="tariff-card__price"><span class="responsive-line-break">9 900 ₽&nbsp;</span>в месяц</p>
             <ul class="tariff-card__list conditions-list">
               <li class="conditions-list__item">
                 <h4 class="conditions-list__title text">Без комиссии</h4>
@@ -202,7 +208,15 @@
             <p class="tariffs__banner-text text text">Подберем для вас индивидуальные условия</p>
           </div>
           <form class="tariffs__banner-form" action="submit">
-            <input class="tariffs__banner-input" type="tel" placeholder="Номер телефона">
+            <input 
+            name="phone"
+            class="tariffs__banner-input" 
+            type="tel" 
+            placeholder="Номер телефона"
+            minlength="6"
+            maxlength="12"
+            required
+            >
             <button class="tariffs__banner-button button" type="submit">
               <span class="button__text">
                 Оставить заявку

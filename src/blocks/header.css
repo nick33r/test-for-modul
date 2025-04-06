@@ -1,0 +1,142 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  padding: 14px 16px;
+  background-color: var(--accent-color, #6F2DC2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8.3px;
+}
+
+.nav__logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.nav__menu-list {
+  display: none;
+  gap: 16.5px;
+}
+
+.nav__menu-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.nav__menu-item:hover {
+  opacity: 0.5;
+}
+
+.nav__menu-item:hover .arrow {
+  transform: rotate(180deg);
+}
+
+.nav__menu-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+.nav__menu-icon {
+  transition: transform 0.3s;
+}
+
+.nav__utility {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 3px;
+}
+
+.nav__utility-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s;
+}
+
+.nav__utility-icon:hover {
+  opacity: 0.6;
+}
+
+.nav__login-button {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 8px 6px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  background-color: #FFFFFF26;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.nav__login-button-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav__login-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (width >= 768px) {
+  .header {
+    padding: 14px 30px;
+  }
+
+  .nav__utility {
+    gap: 25px;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .nav__menu-list {
+    display: flex;
+  }
+
+  .nav__utility-icon {
+    display: none;
+  }
+
+  .nav__utility-icon--always-visible {
+    display: block;
+  }
+
+  .nav__login-button {
+    display: flex;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  .header {
+    padding: 14px 120px;
+  }
+
+  .nav__menu-list {
+    gap: 40px;
+  }
+}

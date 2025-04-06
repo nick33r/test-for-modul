@@ -1,0 +1,159 @@
+.tariffs__banner {
+  display: grid;
+  gap: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #F9F4FF;
+}
+
+.tariffs__banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 0;
+}
+
+.tariffs__banner-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tariffs__banner-title {
+  font-size: 24px;
+}
+
+.tariffs__banner-text {
+  font-size: 16px;
+}
+
+.tariffs__banner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tariffs__banner-input {
+  border: 1px solid #6F2DC21A;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 150%;
+  background-color: #fff;
+  inline-size: 100%;
+}
+
+.tariffs__banner-input::placeholder {
+  color: #0000004D;
+  letter-spacing: -0.02em;
+}
+
+.tariffs__banner-input:focus-visible {
+  outline: 2px solid var(--accent-color, #6F2DC2);
+}
+
+.tariffs__banner-image-block {
+  display: flex;
+  justify-content: center;
+  padding: 23px 32px 0;
+}
+
+.tariffs__banner-img {
+  width: 100%;
+  height: 177px;
+  object-fit: cover;
+  object-position: left top;
+}
+
+@media screen and (width >= 768px) {
+  .tariffs__banner {
+    grid-template-columns: 1fr 200px;
+  }
+
+  .tariffs__banner-content {
+    padding: 25px;
+  }
+
+  .tariffs__banner-text-block {
+    gap: 20px;
+  }
+
+  .tariffs__banner-title {
+    font-size: 30px;
+  }
+
+  .tariffs__banner-text {
+    font-size: 18px;
+  }
+
+  .tariffs__banner-form {
+    flex-direction: row;
+  }
+
+  .tariffs__banner-input {
+    font-size: 18px;
+    inline-size: 230px;
+  }
+
+  .tariffs__banner-button {
+    inline-size: 100%;
+  }
+
+  .tariffs__banner-image-block {
+    padding: 23px 0 0 15px;
+  }
+
+  .tariffs__banner-img {
+    height: 100%;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .tariffs__banner {
+    grid-template-columns: 1fr 360px;
+  }
+
+  .tariffs__banner-content {
+    padding: 45px 2px 45px 50px;
+  }
+
+  .tariffs__banner-title {
+    font-size: 35px;
+  }
+
+  .tariffs__banner-text {
+    font-size: 20px;
+  }
+
+  .tariffs__banner-input {
+    font-size: 20px;
+    inline-size: 300px;
+    flex-shrink: 0;
+  }
+
+  .tariffs__banner-image-block {
+    padding: 30px 23px 0;
+  }
+
+  .tariffs__banner-img {
+    width: 100%;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  .tariffs__banner {
+    grid-template-columns: 1fr 500px;
+  }
+
+  .tariffs__banner-content {
+    padding: 44.5px 50px 45.5px;
+  }
+
+  .tariffs__banner-button {
+    inline-size: fit-content;
+  }
+
+  .tariffs__banner-image-block {
+    padding: 30px 90px 0 96px;
+  }
+}
