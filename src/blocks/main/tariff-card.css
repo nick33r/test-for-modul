@@ -28,14 +28,14 @@
 
 .tariff-card__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--font-size-s);
   line-height: 150%;
   letter-spacing: -0.02em;
 }
 
 .tariff-card__price {
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-size-l);
   line-height: 100%;
   letter-spacing: -0.02em;
 }
@@ -53,12 +53,12 @@
 }
 
 .conditions-list__title {
-  font-size: 16px;
+  font-size: var(--font-size-s);
 }
 
 .conditions-list__text {
   color: #00000080;
-  font-size: 14px;
+  font-size: var(--font-size-xs);
 }
 
 .tariff-card__button-block {
@@ -73,7 +73,7 @@
 
 .tariff-card__regular-price {
   opacity: 0.5;
-  font-size: 14px;
+  font-size: var(--font-size-xs);
   text-align: center;
 }
 
@@ -99,47 +99,15 @@
     border-radius: 27px;
     padding: 22px;
   }
-
-  .tariff-card__title {
-    font-size: 18px;
-  }
-
-  .tariff-card__price {
-    font-size: 30px;
-  }
-
-  .conditions-list__title {
-    font-size: 18px;
-  }
 }
 
 @media screen and (width >= 1024px) {
-  .tariff-card__title {
-    font-size: 20px;
-  }
-
-  .tariff-card__price {
-    font-size: 35px;
-  }
-
   .conditions-list__item:first-of-type {
     margin-block-start: 10px;
   }
   
   .conditions-list__item:last-of-type {
     margin-block-end: 10px;
-  }
-
-  .conditions-list__title {
-    font-size: 20px;
-  }
-
-  .conditions-list__text {
-    font-size: 16px;
-  }
-
-  .tariff-card__regular-price {
-    font-size: 16px;
   }
 
   .sbp-icon::before {

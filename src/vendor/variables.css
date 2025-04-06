@@ -1,7 +1,35 @@
 :root {
   --accent-color: #6F2DC2;
   --accent-gradient: linear-gradient(to right, #A965ED, #FA71CD);
+  --intro-background: #F9F4FF;
 
 
+  --header-font-family: 'Montserrat', sans-serif;
   --main-font-family: 'Inter-Variable', sans-serif;
+
+
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 20px;
+  --font-size-l: 24px;
+  --font-size-xxl: 30px;
+}
+
+@media screen and (width >= 768px) {
+  :root {
+    --font-size-s: 18px;
+    --font-size-m: 22px;
+    --font-size-l: 30px;
+    --font-size-xxl: 35px;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  :root {
+    --font-size-xs: 16px;
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+    --font-size-l: 35px;
+    --font-size-xxl: 50px;
+  }
 }

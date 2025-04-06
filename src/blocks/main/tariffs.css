@@ -6,7 +6,7 @@
 }
 
 .tariffs__title {
-  font-size: 30px;
+  font-size: var(--font-size-xxl);
   text-align: center;
 }
 
@@ -19,19 +19,11 @@
   .tariffs {
     padding: 120px 30px 79px;
   }
-
-  .tariffs__title {
-    font-size: 35px;
-  }
 }
 
 @media screen and (width >= 1024px) {
   .tariffs {
     padding: 180px 30px 89px;
-  }
-
-  .tariffs__title {
-    font-size: 50px;
   }
 
   .tariffs__list {

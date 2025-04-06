@@ -20,11 +20,11 @@
 }
 
 .tariffs__banner-title {
-  font-size: 24px;
+  font-size: var(--font-size-l);
 }
 
 .tariffs__banner-text {
-  font-size: 16px;
+  font-size: var(--font-size-s);
 }
 
 .tariffs__banner-form {
@@ -37,7 +37,7 @@
   border: 1px solid #6F2DC21A;
   border-radius: 10px;
   padding: 12px 20px;
-  font-size: 16px;
+  font-size: var(--font-size-s);
   line-height: 150%;
   background-color: #fff;
   inline-size: 100%;
@@ -78,20 +78,11 @@
     gap: 20px;
   }
 
-  .tariffs__banner-title {
-    font-size: 30px;
-  }
-
-  .tariffs__banner-text {
-    font-size: 18px;
-  }
-
   .tariffs__banner-form {
     flex-direction: row;
   }
 
   .tariffs__banner-input {
-    font-size: 18px;
     inline-size: 230px;
   }
 
@@ -117,16 +108,7 @@
     padding: 45px 2px 45px 50px;
   }
 
-  .tariffs__banner-title {
-    font-size: 35px;
-  }
-
-  .tariffs__banner-text {
-    font-size: 20px;
-  }
-
   .tariffs__banner-input {
-    font-size: 20px;
     inline-size: 300px;
     flex-shrink: 0;
   }
