@@ -3,57 +3,9 @@
 @import url('../vendor/variables.css');
 @import url('../blocks/header.css');
 @import url('../blocks/main.css');
+@import url('../blocks/button.css');
 
 /* Общие элементы страницы */
-
-.button {
-  position: relative;
-  border: none;
-  border-radius: 8px;
-  padding: 17px;
-  overflow: hidden;
-  color: var(--accent-color, #6F2DC2);
-  background: #6F2DC21A;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.button:not(.button--accent):hover {
-  background: #702dc235;
-}
-
-.button:focus-visible {
-  outline: 2px solid var(--accent-color, #6F2DC2);
-}
-
-.button--accent {
-  color: #fff;
-  background: var(--accent-gradient);
-}
-
-.button__text {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-  font-size: var(--font-size-s);
-  line-height: 100%;
-  letter-spacing: -0.02em;
-}
-
-.button--accent::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  background-color: #A965ED;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.button--accent:hover::before {
-  opacity: 1;
-}
 
 .title {
   font-weight: 700;
@@ -67,17 +19,7 @@
   letter-spacing: -0.02em;
 }
 
-@media screen and (width >= 768px) {
-  .button {
-    padding: 18.5px 26px;
-  }
-}
-
 @media screen and (width >= 1024px) {
-  .button {
-    padding: 20px 30px;
-  }
-
   .responsive-line-break {
     display: block;
   }
