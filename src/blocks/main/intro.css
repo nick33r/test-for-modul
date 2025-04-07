@@ -1,31 +1,32 @@
 .intro {
   padding: 30px 0 0;
-  background-color: var(--intro-background, #F9F4FF);
-}
-
-.main-promo {
+  background-color: var(--section-alternate-background, #F9F4FF);
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.main-promo__content {
+.intro-promo {
+  display: grid;
+  gap: 20px;
+}
+
+.intro-promo__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 0 15px;
 }
 
-.main-promo__textblock {
+.intro-promo__textblock {
   padding-right: 5px;
 }
 
-.main-promo__title {
+.intro-promo__title {
   margin-block-end: 15px;
   font-size: var(--font-size-xxl);
 }
 
-.main-promo__text {
+.intro-promo__text {
   margin-block-end: 15px;
   font-weight: 400;
   font-size: var(--font-size-m);
@@ -33,53 +34,54 @@
   letter-spacing: -0.02em;
 }
 
-.main-promo__text:last-of-type {
+.intro-promo__text:last-of-type {
   margin-block-end: 10px;
 }
 
-.main-promo__price {
+.intro-promo__price {
   opacity: 0.5;
   font-size: var(--font-size-xs);
 }
 
-.main-promo__imgblock {
+.intro-promo__imgblock {
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
-.main-promo__img {
+.intro-promo__img {
   width: 100%;
 }
 
 @media screen and (width >= 768px) {
   .intro {
     padding: 60px 30px 0;
+    gap: 30px;
   }
 
-  .main-promo {
+  .intro-promo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
   }
 
-  .main-promo__content {
+  .intro-promo__content {
     padding: 0;
   }
 
-  .main-promo__textblock {
+  .intro-promo__textblock {
     padding-right: 25px;
   }
 
-  .main-promo__title {
+  .intro-promo__title {
     margin-block-end: 20px;
   }
 
-  .main-promo__button {
+  .intro-promo__button {
     width: fit-content;
   }
 
-  .main-promo__img {
+  .intro-promo__img {
     height: 360px;
     object-fit: contain;
   }
@@ -88,25 +90,26 @@
 @media screen and (width >= 1024px) {
   .intro {
     padding: 20px 30px 0;
+    gap: 20px;
   }
 
-  .main-promo {
+  .intro-promo {
     gap: 30px;
   }
 
-  .main-promo__content {
+  .intro-promo__content {
     justify-content: center;
   }
 
-  .main-promo__textblock {
+  .intro-promo__textblock {
     padding-right: 0;
   }
 
-  .main-promo__title {
+  .intro-promo__title {
     margin-block-end: 30px;
   }
 
-  .main-promo__img {
+  .intro-promo__img {
     height: 100%;
   }
 }
@@ -114,9 +117,10 @@
 @media screen and (width >= 1440px) {
   .intro {
     padding: 0 120px;
+    gap: 0;
   }
 
-  .main-promo__img {
+  .intro-promo__img {
     width: calc(100% - 25px);
   }
 }

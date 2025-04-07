@@ -2,10 +2,17 @@
   --accent-color: #6F2DC2;
   --accent-color-hover: #A965ED;
   --accent-gradient: linear-gradient(to right, #A965ED, #FA71CD);
-  --intro-background: #F9F4FF;
+  --accent-font-color: #FFF;
+  --input-placeholder-color: #0000004D;
+
+  --section-default-background: #FFF;
+  --section-alternate-background: #F9F4FF;
 
   --default-button-color: #6F2DC21A;
   --default-button-color-hover: #702dc235;
+
+  --default-card-border-color: #6F2DC21A;
+  --card-font-color-alternate: #00000080;
 
 
   --header-font-family: 'Montserrat', sans-serif;

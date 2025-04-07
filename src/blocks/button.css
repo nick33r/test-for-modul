@@ -19,7 +19,7 @@
 }
 
 .button--accent {
-  color: #fff;
+  color: var(--accent-font-color, #FFF);
   background: var(--accent-gradient);
 }
 

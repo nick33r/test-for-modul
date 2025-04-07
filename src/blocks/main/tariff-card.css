@@ -1,6 +1,6 @@
 .tariff-card {
   border-radius: 20px;
-  background: #6F2DC21A;
+  background: var(--default-card-border-color, #6F2DC21A);
 }
 
 .tariff-card--accent {
@@ -22,7 +22,7 @@
   margin: 3px;
   border-radius: 17px;
   padding: 17px;
-  background-color: #fff;
+  background-color: var(--section-default-background, #FFF);
   block-size: calc(100% - 6px);
 }
 
@@ -57,7 +57,7 @@
 }
 
 .conditions-list__text {
-  color: #00000080;
+  color: var(--card-font-color-alternate, #00000080);
   font-size: var(--font-size-xs);
 }
 
