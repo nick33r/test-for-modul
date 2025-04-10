@@ -1,29 +1,24 @@
 import '../pages/index.css';
 
 document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.slider-parners');
   const sliderList = document.querySelector('.slider-parners__list');
   const partners = document.querySelectorAll('.slider-parners__item');
 
-  if (partners.length === 0) return;
-
-  const cloneCount = calculateCloneCount(partners.length);
-  clonePartners(cloneCount);
-
-  function calculateCloneCount(itemsCount) {
-    if (itemsCount <= 3) return 5;
-    if (itemsCount <= 6) return 3;
-    if (itemsCount >= 12) return 0;
-    return 1;
+  if (slider.offsetWidth < sliderList.offsetWidth) {
+    clonePartners();
+  } else {
+    sliderList.style.animation = 'none';
+    slider.style.display = 'flex';
+    slider.style.justifyContent = 'center';
   }
 
-  function clonePartners(cycles) {
+  function clonePartners() {
     const fragment = document.createDocumentFragment();
     
-    for (let i = 0; i < cycles; i++) {
-      partners.forEach(partner => {
-        fragment.appendChild(partner.cloneNode(true));
-      });
-    }
+    partners.forEach(partner => {
+      fragment.appendChild(partner.cloneNode(true));
+    });
     
     sliderList.appendChild(fragment);
   }
